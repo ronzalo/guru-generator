@@ -1,4 +1,6 @@
-# WTF 
+# WTF is this
+[![Build Status](https://travis-ci.org/ronzalo/guru-generator.svg?branch=master)](https://travis-ci.org/ronzalo/guru-generator)
+
 Ugn gegnecgggagocggg ge cacgggaccecgggej ignjcicgggago egn eg cajacgggo cugiao
 
 # CLI Usage
