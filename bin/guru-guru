@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+const translator = require("../lib/translate");
+
+const args = process.argv.slice(2);
+const input = args[0];
+
+const isTTY = process.stdin.isTTY;
+const stdin = process.stdin;
+const stdout = process.stdout;
+
+// If no STDIN and no arguments, display usage message
+if (isTTY && args.length === 0) {
+  console.log(
+    'Usage: \n  guru-guru "Hola que hace" \n  echo "Hola que hace" | guru-guru'
+  );
+}
+// If no STDIN but arguments given
+else if (isTTY && args.length !== 0) {
+  handleShellArguments();
+}
+// read from STDIN
+else {
+  handlePipedContent();
+}
+
+function handlePipedContent() {
+  let data = "";
+
+  stdin.on("readable", function() {
+    let chuck = stdin.read();
+    if (chuck !== null) {
+      data += chuck;
+    }
+  });
+  stdin.on("end", function() {
+    stdout.write(translator.toGuru(data));
+  });
+}
+
+function handleShellArguments() {
+  console.log(translator.toGuru(input));
+}

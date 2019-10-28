@@ -1,0 +1,22 @@
+{
+  "name": "guru-ipsum",
+  "version": "1.0.0",
+  "description": "Ugn gegnecgggagocggg ge cacgggaccecgggej ignjcicgggago egn eg cajacgggo cugiao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@rockzalo/guru-guru": "bin/guru-guru",
+    "guru-guru": "bin/guru-guru"
+  },
+  "keywords": [
+    "guru-guru",
+    "cli",
+    "lorem",
+    "ipsum",
+    "generador"
+  ],
+  "author": "Gonzalo Moreno",
+  "license": "MIT"
+}
