@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const translator = require("../lib/translate");
+const translator = require("../lib/translator");
 
 const args = process.argv.slice(2);
 const input = args[0];

@@ -4,7 +4,7 @@
   "description": "Ugn gegnecgggagocggg ge cacgggaccecgggej ignjcicgggago egn eg cajacgggo cugiao",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "bin": {
     "@rockzalo/guru-guru": "bin/guru-guru",
@@ -18,5 +18,9 @@
     "generador"
   ],
   "author": "Gonzalo Moreno",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
 }
