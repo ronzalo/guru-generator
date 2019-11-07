@@ -18,6 +18,6 @@ echo "Hola que hace" | guru-guru
 # JS Usage
 
 ```javascript
-const translator = require("../lib/translator");
+import translator from "@rockzalo/guru-generator/lib/translator";
 translator.toGuru("Quizas, quizas, quizas")
 ```
